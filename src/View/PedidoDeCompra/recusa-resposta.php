@@ -10,14 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ratificação enviada!</title>
+    <title>Pedido negado!</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-
+    <link href="../../../webroot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../webroot/css/style.css" rel="stylesheet">
+    
   </head>
   <body>
 
@@ -42,7 +42,7 @@
 				            <div  class="jumbotron">
 				                <br><br>
 				                <h3 align="center">
-				                    Solicitação de ratificação enviada com sucesso....
+				                    O pedido foi negado com sucesso...
 				                </h3>
 				                <br>    
 				                <p align="center">

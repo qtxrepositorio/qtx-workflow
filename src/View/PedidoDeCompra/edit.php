@@ -1,9 +1,3 @@
-<?php
-
-$linkInicial = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,8 +10,8 @@ $linkInicial = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../../../webroot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../webroot/css/style.css" rel="stylesheet">
 
   </head>
   <body>
@@ -30,7 +24,7 @@ $linkInicial = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 				</div>
 				<div class="col-md-4">
 
-					<form method="POST" action="edit-send.php">
+					<form method="POST" action="../../../src/Controller/PedidoDeCompra/edit-send.php">
 						<div class="form-group">
 							 
 							<label for="">

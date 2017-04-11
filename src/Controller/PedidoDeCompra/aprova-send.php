@@ -1,7 +1,7 @@
 ﻿<?php
 
-require '../PHPMailer/PHPMailerAutoload.php';
-require_once('../nusoap/lib/nusoap.php');
+require '../../../plugins/PHPMailer/PHPMailerAutoload.php';
+require_once('../../../plugins/nusoap/lib/nusoap.php');
 
 /*
 
@@ -55,7 +55,7 @@ if($result["PUTPCRESULT"]["LLOGICO"] == "true"){
 	//$Mailer->SMTPDebug = 3;
 
 	if ($Mailer->Send()) {
-		echo("<script>location.href='aprova-resposta.php'</script>");
+		echo("<script>location.href='../../View/PedidoDeCompra/aprova-resposta.php'</script>");
 	}
 
 }

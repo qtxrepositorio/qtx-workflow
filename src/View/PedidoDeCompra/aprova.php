@@ -1,8 +1,3 @@
-<?php
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,8 +10,8 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../../../webroot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../webroot/css/style.css" rel="stylesheet">
 
   </head>
   <body>
@@ -29,7 +24,7 @@
 				</div>
 				<div class="col-md-4">
 
-					<form method="POST" action="aprova-send.php">
+					<form method="POST" action="../../Controller/PedidoDeCompra/aprova-send.php">
 						<div align="center" class="form-group">
 							 
 

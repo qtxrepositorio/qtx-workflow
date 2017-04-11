@@ -47,7 +47,7 @@ if($result["PUTPCRESULT"]["LLOGICO"] == "true"){
 	$Mailer->Password = 'Faraca@2015_QTX#';
 	$Mailer->From = $_POST['emailCriador']; 
 	$Mailer->FromName = 'workflow';
-	$assunto = "O pedido de compra nº " . $_POST['numPedido'] . ' precisa ser revisado!';
+	$assunto = "O pedido de compra nº " . $_POST['numPedido'] . ' não foi aprovado ou foi cancelado!';
 	$Mailer->Subject = utf8_decode($assunto);
 	$Mailer->Body = utf8_decode($mensagem);
 	$Mailer->AltBody = 'ALT Conteudo';

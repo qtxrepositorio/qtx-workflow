@@ -1,15 +1,15 @@
 <?php
 
-require '../PHPMailer/PHPMailerAutoload.php';
+require '../../../plugins/PHPMailer/PHPMailerAutoload.php';
 
 $Mailer = new PHPMailer();
 
 $mensagem = '<div>';
 $mensagem .= '<img src="http://qualitex.com.br/images/logo.png">';
-$mensagem .= '<h3>A aprovação do seu pedido acaba de ser negada!</h3>';
+$mensagem .= '<h3>Seu pedido continua pendente de aprovação!</h3>';
 $mensagem .= '</div>';
 $mensagem .= '<h4>Email do responsável pela analise do pedido: '.$_POST['emailAprovador'].' </h4>';
-$mensagem .= '<h4>Motivos para a não aprovação: </h4>';
+$mensagem .= '<h4>Será necessario realizar as seguintes alterações: </h4>';
 $mensagem .= '<p>'.$_POST['consideracoes'].'</p>';
 $mensagem .= '<br><br>';
 $mensagem .= '<h4>Mensagem automática, favor não responder!<h4>';
@@ -31,10 +31,11 @@ $Mailer->Body = utf8_decode($mensagem);
 $Mailer->AltBody = 'ALT Conteudo';
 $Mailer->AddAddress($_POST['emailCriador']); 
 $Mailer->SMTPOptions  =  array ('ssl'=>array('verify_peer'=>false, 'verify_peer_name'=>false, 'allow_self_signed'=>true));  
+	
 
 if ($Mailer->Send()) {
 	//echo("<script Language=JavaScript>alert('Mensagem enviada com sucesso. Em breve nossa equipe entrará em contato com você!')</script>");
-	echo("<script>location.href='recusa-resposta.php'</script>");
+	echo("<script>location.href='../../View/PedidoDeCompra/edit-resposta.php'</script>");
 }else{
 	echo 'Erro! ' . $Mailer->ErrorInfo;
 }
